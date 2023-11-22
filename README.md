@@ -1,5 +1,5 @@
 # stupidathon
-This is an app developed for 2023 SSTINC stupidathon
+This is an app developed for 2023 SSTINC camp stupidathon
 THE PLAN
 
 Make a box opening simulator where there is 5 boxes to the end. Cooldown for boxes is 10 secs 

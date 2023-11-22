@@ -1,6 +1,2 @@
 # stupidathon
-chicken
-
-dumb stuff
-
-new idea: box and timer
+This is an app developed for 2023 SSTINC stupidathon

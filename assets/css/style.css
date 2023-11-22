@@ -1,5 +1,4 @@
 body {
-    margin: 10px;
     background-color: white;
 }
 
@@ -30,6 +29,17 @@ header {
     animation: moveBox 3s linear infinite alternate;
 }
 
+#video-container {
+    display: none;
+    width: 100vw;
+    height: 100lvh;
+}
+
+#video {
+    position: relative;
+    width: 100%;
+}
+
 @keyframes headerGrow {
     0%     {letter-spacing: -5px; color: red; transform: rotate(-5deg);}
     100%   {letter-spacing: 10px; color: blue; transform: rotate(5deg);}
@@ -42,8 +52,8 @@ header {
 }
 
 @keyframes revealNewBox {
-    0% {top: 0px}
-    100% {top: 100px}
+    0% {top: 0px; transform: scale(1)}
+    100% {top: 100px; transform: scale(2)}
 }
 
 @keyframes shake {

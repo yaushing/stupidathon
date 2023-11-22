@@ -44,7 +44,6 @@ function openBox() {
       main.style.animation = "revealNewBox 1s linear";
     }
     openedBox += 1
-    console.log("1")
     setTimeout(function () {
       main.style.animation = "moveBox 0.5s linear infinite";
       openMore.innerHTML = "Boxes to open: " + (boxesToOpen - openedBox)
@@ -73,7 +72,7 @@ function openBox() {
             timeToOpen = timeToOpen * 2
             openMore.innerHTML = "Boxes to open: " + (boxesToOpen - openedBox)
             clicksMore.innerHTML = "Clicks to open this box: " + (timeToOpen - clicked)
-          }, 2000)
+          }, 3000)
         }
       }
       closed.style.animation = "none";

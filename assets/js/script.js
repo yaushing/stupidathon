@@ -61,7 +61,7 @@ function openBox() {
           clicksMore.innerHTML = "Clicks to open this box: " + (timeToOpen - clicked)
         } else {
           modal.style.display = "block";
-          vid.src = "assets/vid/" + Math.floor((Math.random()*3)+1) + ".mp4";
+          vid.src = "assets/vid/" + Math.floor((Math.random()*4)+1) + ".mp4";
           vid.play()
           clicked = 0;
           setTimeout(function () {

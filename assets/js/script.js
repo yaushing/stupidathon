@@ -19,7 +19,7 @@ const opened = document.getElementById("box-open");
 const openMore = document.getElementById("boxesNot");
 const clicksMore = document.getElementById("boxesClick");
 function openBox() {
-  if (Math.floor(Math.random() * 10) <= 1) {playEncouragement()}
+  if (Math.floor(Math.random() * 10) <= 3) {playEncouragement()}
   if (clicked < timeToOpen - 1) {
     clicked += 1
     clicksMore.innerHTML = "Clicks to open this box: " + (timeToOpen - clicked)

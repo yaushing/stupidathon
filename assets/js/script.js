@@ -9,6 +9,7 @@ var opensnd = new Audio("assets/sound/boxOpenSound.mp3");
 var tada = new Audio("assets/sound/finalSound.mp3")
 var stunned = new Audio("assets/sound/tooStunned.mp3")
 var encouragement = new Audio("assets/sound/encourage/1.mp3")
+var bgsnd = new Audio("assets/sound/background.mp3")
 const modal = document.getElementById("video-container")
 const text = document.getElementById("text")
 const vid = document.getElementById("video")
@@ -18,6 +19,12 @@ const closed = document.getElementById("box-close");
 const opened = document.getElementById("box-open");
 const openMore = document.getElementById("boxesNot");
 const clicksMore = document.getElementById("boxesClick");
+
+window.addEventListener("load", (event) => {
+  bgsnd.play()
+});
+
+
 function openBox() {
   if (Math.floor(Math.random() * 10) <= 3) {playEncouragement()}
   if (clicked < timeToOpen - 1) {

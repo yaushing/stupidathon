@@ -10,6 +10,7 @@ var tada = new Audio("assets/sound/finalSound.mp3")
 var stunned = new Audio("assets/sound/tooStunned.mp3")
 var encouragement = new Audio("assets/sound/encourage/1.mp3")
 const modal = document.getElementById("video-container")
+const text = document.getElementById("text")
 const vid = document.getElementById("video")
 const root = document.getElementById('root');
 const main = document.getElementById('main-container');
@@ -90,10 +91,12 @@ function toggleDarkMode () {
     root.style.backgroundColor = "black";
     clicksMore.style.color = "white";
     openMore.style.color = "white";
+    text.style.color = "white";
   } else {
     root.style.backgroundColor = "white";
     clicksMore.style.color = "black";
     openMore.style.color = "black";
+    text.style.color = "black";
   }
 }
 

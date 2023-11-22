@@ -26,14 +26,15 @@
         </div>
         <div class="break"></div>
         <div class="d-flex flex-row">
-            <p id="boxesNot">Boxes to Open: 2</p>
-        </div>
-        <div class="d-flex flex-row">
-            <p id="boxesClick">Clicks to open this box: 2</p>
-        </div>
-        <div class="d-flex flex-row">
-            <audio src="assets/sound/background.mp3" autoplay></audio>
-            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <div class="d-flex flex-col">
+                <p id="boxesNot">Boxes to Open: 2</p>
+                <p id="boxesClick">Clicks to open this box: 2</p>
+            </div>
+            <div class="d-flex flex-col">
+                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                <p id="text">Sound credit: Pixabay, respective authors. I do not know any pictures/videos in this</p>
+                <audio src="assets/sound/background.mp3" autoplay></audio>
+            </div>
         </div>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>

@@ -14,6 +14,7 @@ body {
 header {
     font-size: 7vw;
     animation: headerGrow 5s linear infinite alternate;
+    overflow: hidden;
 }
 
 .break {
@@ -26,7 +27,7 @@ header {
 
 #main-container {
     position: relative;
-    animation: moveBox 3s linear infinite alternate;
+    animation: moveBox 0.5s linear infinite;
 }
 
 #video-container {
@@ -41,14 +42,15 @@ header {
 }
 
 @keyframes headerGrow {
-    0%     {letter-spacing: -5px; color: red; transform: rotate(-5deg);}
+    0%     {letter-spacing: -10px; color: red; transform: rotate(-5deg);}
     100%   {letter-spacing: 10px; color: blue; transform: rotate(5deg);}
 }
 
 @keyframes moveBox {
     0%  {top: -100px; right: 0px;}
-    50%  {top: 0px; right: -100px;}
-    100%  {top: 0px; right: 100px}
+    33%  {top: 0px; right: -100px;}
+    66%  {top: 0px; right: 100px}
+    100% {top: -100px; right: 0px;}
 }
 
 @keyframes revealNewBox {

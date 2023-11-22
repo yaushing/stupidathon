@@ -46,7 +46,7 @@ function openBox() {
     openedBox += 1
     console.log("1")
     setTimeout(function () {
-      main.style.animation = "moveBox 3s linear infinite alternate";
+      main.style.animation = "moveBox 0.5s linear infinite";
       openMore.innerHTML = "Boxes to open: " + (boxesToOpen - openedBox)
       if (openedBox >= boxesToOpen) {
         if (Math.floor(Math.random() * 10) <= 1) {

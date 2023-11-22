@@ -12,12 +12,26 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/images/favicon.png" />
     </head>
-    <body>
-        <div class="d-flex flex-col">
-            <h1>Open the box</h1>
+    <body id="root">
+        <div class="d-flex flex-row">
+            <header>Click to open this box</header>
         </div>
+        <div class="break"></div>
+        <div id="main-container" class="d-flex flex-row">
+            <a id="box-close" href="javascript:openBox();" class=""><img src="assets/images/close.png" /></a>
+            <a id="box-open" class="hidden"><img src="assets/images/open.png" /></a>
+        </div>
+        <div class="break"></div>
+        <div class="d-flex flex-row">
+            <p id="boxesNot">Boxes to Open: 2</p>
+        </div>
+        <div class="d-flex flex-row">
+            <p id="boxesClick">Clicks to open this box: 2</p>
+        </div>
+        <audio src="assets/sound/background.mp3" autoplay></audio>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <script src="assets/js/script.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/script.js"></script>
     </body>
 </html>

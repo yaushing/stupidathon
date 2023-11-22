@@ -26,7 +26,7 @@ window.addEventListener("load", (event) => {
 
 
 function openBox() {
-  if (Math.floor(Math.random() * 10) <= 3) {playEncouragement()}
+  if (Math.floor(Math.random() * 10) <= 1) {playEncouragement()}
   if (clicked < timeToOpen - 1) {
     clicked += 1
     clicksMore.innerHTML = "Clicks to open this box: " + (timeToOpen - clicked)
